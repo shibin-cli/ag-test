@@ -13,6 +13,8 @@ export default mergeConfig(
         reporter: ['text', 'json', 'html', 'clover'],
         exclude: configDefaults.coverage.exclude?.concat('src/main.ts'),
         reportsDirectory: './coverage',
+        all: true,
+        include: ['src/**/*.{ts,vue,tsx}'],
       },
     },
   }),
